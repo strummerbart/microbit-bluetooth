@@ -1,7 +1,11 @@
-bluetooth.onBluetoothConnected(function on_bluetooth_connected() {
+bluetooth.onBluetoothConnected(function () {
     basic.showIcon(IconNames.SmallSquare)
 })
-bluetooth.onBluetoothDisconnected(function on_bluetooth_disconnected() {
+bluetooth.onBluetoothDisconnected(function () {
     basic.showIcon(IconNames.Square)
 })
+basic.showIcon(IconNames.Square)
 bluetooth.startButtonService()
+bluetooth.startLEDService()
+bluetooth.startAccelerometerService()
+bluetooth.startTemperatureService()
